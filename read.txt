@@ -1,3 +1,3 @@
 web容器在初始化时使用一个ServletConfig(即config)对象向JSP页面传递信息，此配置信息包括初始化参数（在当前Web应用的应用部署描述文件web.xml中定义
 
-Creating a new branch is quick.
+Creating a new branch is quick & simple
