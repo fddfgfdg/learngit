@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>豆瓣摄影 · 豆瓣旗下摄影服务平台 · 摄影师预约 · 婚纱 / 写真 / 旅拍</title>
+	<meta charset="utf-8">
+	<!-- 标签栏中标题的图标 -->
+	<link rel="icon" type="image/png" href="https://img3.doubanio.com/f/ypy/03f8935ebc2501c6135336e151cbfb9891dc15cb/pics/favicon.png" />
+
+	<!-- 通用的css样式 -->
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<!-- top -->
+	<link rel="stylesheet" type="text/css" href="css/top.css">
+	<!-- rmzt -->
+	<link rel="stylesheet" type="text/css" href="css/rmzt.css">
+	<!-- 婚纱写真 -->
+	<link rel="stylesheet" type="text/css" href="css/hsxz.css">
+	<!-- features -->
+	<link rel="stylesheet" type="text/css" href="css/features.css">
+	<!-- 推荐 -->
+	<link rel="stylesheet" type="text/css" href="css/tj.css">
+
+	<!-- footer -->
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+</head>
+<body>
+	<div id="top"></div>
+	<div id="rmzt">
+		<h1>热门专题</h1>
+	</div>
+
+	<div class="hsxz">
+		<h1>写真</h1>
+		<div class="list">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+		</div>
+	</div>
+
+	<div class="hsxz">
+		<h1>婚纱</h1>
+		<div class="list">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+		</div>
+	</div>
+
+	<div id="features">
+		<div></div>
+	</div>
+
+	<div id="tj">
+		<h1>本期推荐摄影师</h1>
+	</div>
+
+	<div id="footer"></div>
+
+	<script type="text/javascript">
+		var topDiv = document.querySelector("#top");
+		/*
+			1.对于IE9+、chrome、firefox、Opera、Safari：
+			window.innerHeight浏览器窗口的内部高度；
+			window.innerWidth浏览器窗口的内部宽度；
+		*/ 
+		// 刷新页面的时候， top 的默认大小
+		topDiv.style.height = window.innerHeight + "px";
+		// 浏览器窗口发生大小变化的时候，更新 top 的大小
+		window.onresize = function() {
+			topDiv.style.height = window.innerHeight + "px";
+		};
+	</script>
+</body>
+</html>
